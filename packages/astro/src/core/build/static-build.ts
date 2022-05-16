@@ -235,6 +235,7 @@ async function clientBuild(
 		envPrefix: 'PUBLIC_',
 		server: viteConfig.server,
 		base: astroConfig.base,
+		resolve: viteConfig.resolve,
 	} as ViteConfigWithSSR;
 
 	await runHookBuildSetup({
